@@ -1,0 +1,207 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: hsl(0, 0%, 0%);
+    z-index: 8;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    padding: 15px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    background-color: hsl(0, 0%, 10%);
+  }
+  
+  
+  .coverpg {
+    background-image: url(/Assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    border-radius: 2px solid black;
+    transform: scale(1.05);
+    filter: blur(3px);
+    z-index: -1;
+  }
+  
+  .container1 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+
+  }
+  
+  .container1 h1 {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .container1 p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .container1 a {
+    text-decoration: none;
+    color: white;
+    border: 4px solid white;
+    padding: 12px;
+    display: inline-block;
+  }
+  
+  .container1 a:hover {
+    background-color: #557975;
+    color: black;
+  }
+  
+.whatwedo {
+background-color: #557975d3;
+width: 100%;
+height: 100vh;
+margin-top: 100vh;
+}
+  /* Responsive Code */
+  @media screen and (max-width: 600px) {
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+      
+
+    }
+  
+    .navbar a {
+      display:block; 
+      width: 100%;
+    }
+    .cards{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+.cards{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+.card1, .card2, .card3 {
+  border: rgb(255, 255, 255) 2px solid;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 325px;
+  height: 300px;
+  padding: 25px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
