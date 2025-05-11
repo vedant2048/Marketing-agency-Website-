@@ -1,24 +1,15 @@
-const card1 = document.querySelector('.card1');  // Correctly selecting element by class
+const cards = document.querySelectorAll('.card1,.card2,.card3');  // Correctly selecting element by class
 const targetElement = document.querySelector('.whatwedo');  // Correctly selecting element by class
+const targetLinks = document.querySelectorAll('.whatwedo h2');
 
-card1.addEventListener('mouseenter', () => {
-    targetElement.style.filter = 'blur(10px)';  // Apply blur filter when hovered
-});
+cards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        targetElement.style.backgroundColor = 'rgba(0, 0, 0, 0.68)';
+        targetLinks.forEach(link => link.style.color = "#ffffff");
+    });
 
-card1.addEventListener('mouseleave', () => {
-    targetElement.style.filter = 'none';  // Remove blur when mouse leaves
-});
-
-card1.addEventListener('mouseenter',() => {
-    targetElement.style.zindex = '-1';
-});
-card1.addEventListener('mouseenter',() => {
-    targetElement.style.zindex = '1';
-});
-
-card1.addEventListener('mouseenter',() => {
-    card1.style.zindex = '10';
-});
-card1.addEventListener('mouseenter',() => {
-    card1.style.zindex = '1';
+    card.addEventListener('mouseleave', () => {
+        targetElement.style.backgroundColor = '#557975a7';
+        targetLinks.forEach(link => link.style.color = "#000000");
+    });
 });
